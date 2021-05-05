@@ -48,5 +48,3 @@ _deps
 
 #but not the sfml folder
 #!External/SFML-2.5.1/doc/html/*
-External/*
-!External/SFML-2.5.1/
