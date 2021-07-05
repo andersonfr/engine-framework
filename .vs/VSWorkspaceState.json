@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\App",
+    "\\App\\src",
+    "\\External",
+    "\\External\\include",
+    "\\External\\include\\sfml-engine"
+  ],
+  "SelectedNode": "\\External\\CMakeLists.txt",
+  "PreviewInSolutionExplorer": false
+}
