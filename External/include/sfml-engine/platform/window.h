@@ -15,4 +15,7 @@ class Window
         virtual void Draw() = 0;
         virtual bool Update() = 0;
         virtual bool IsOpen() = 0;
+
+        virtual float GetWidth() = 0;
+        virtual float GetHeight() = 0;
 };

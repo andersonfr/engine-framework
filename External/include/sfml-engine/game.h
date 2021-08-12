@@ -10,7 +10,7 @@ class Game
         void Run();
     protected:
         virtual void Update(float deltaTime){}
-        void Start();
+        virtual void Start();
         void UpdatePhysics(float fixedDeltaTime){};
         void Draw();
 

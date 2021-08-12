@@ -57,6 +57,8 @@
         "filesystem": "cpp",
         "iomanip": "cpp",
         "ratio": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "cctype": "cpp",
+        "concepts": "cpp"
     }
 }

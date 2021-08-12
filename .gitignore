@@ -48,3 +48,13 @@ _deps
 
 #but not the sfml folder
 #!External/SFML-2.5.1/doc/html/*
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/

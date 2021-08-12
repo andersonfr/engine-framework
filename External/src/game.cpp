@@ -1,6 +1,7 @@
 #include <sfml-engine/game.h>
 #include <sfml-engine/service_locator.h>
-#include <sfml-engine/platform/sfml_window.h>
+// #include <sfml-engine/platform/sfml_window.h>
+// #include <sfml-engine/platform/input.h>
 
 Game::Game(): Game("Default Title Game"){}
 
@@ -16,18 +17,18 @@ Game::~Game()
 
 void Game::Start()
 {
-    ServiceLocator::GetSceneGraph()->GetScene()->Start();
-}
-
-void Game::Run()
-{
-    ServiceLocator::GetWindow()->OpenWindow(
+      ServiceLocator::GetWindow()->OpenWindow(
         {
             800,
             600,
             m_title
         });
+}
+
+void Game::Run()
+{
     Start();
+    ServiceLocator::GetSceneGraph()->GetScene()->Start();
     while(m_isRunning)
     {
         if(!ServiceLocator::GetWindow()->Update())
@@ -50,6 +51,9 @@ void Game::InitializeServices()
 {
     ServiceLocator::Provide(new SFMLWindow());
     ServiceLocator::Provide(new SceneGraph());
+    ServiceLocator::Provide(new Resources());
+    ServiceLocator::Provide(new SFMLCamera());
+    ServiceLocator::Provide(new SFMLInputKeyBoard());
 }
 void Game::ShutdownServices()
 {
